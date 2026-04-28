@@ -9,8 +9,8 @@ import { GraduationCap } from 'lucide-react';
 
 export function LoginPage() {
   const navigate = useNavigate();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('sarah.johnson@university.edu');
+  const [password, setPassword] = useState('Password123!');
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -74,7 +74,7 @@ export function LoginPage() {
               </div>
 
               {/* Email Login Form */}
-              <form onSubmit={handleLogin} className="space-y-4">
+              <form onSubmit={handleLogin} className="space-y-4 rounded-lg border bg-muted/30 p-4">
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
                   <Input
@@ -83,6 +83,7 @@ export function LoginPage() {
                     placeholder="student@university.edu"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    className="h-11 border-border bg-background shadow-sm"
                     required
                   />
                 </div>
@@ -103,12 +104,16 @@ export function LoginPage() {
                     type="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
+                    className="h-11 border-border bg-background shadow-sm"
                     required
                   />
                 </div>
                 <Button type="submit" className="w-full">
                   Sign In
                 </Button>
+                <p className="text-xs text-muted-foreground">
+                  Example credentials are prefilled for demo login.
+                </p>
               </form>
 
               <p className="text-center text-sm text-muted-foreground">
