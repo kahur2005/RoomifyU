@@ -1,5 +1,3 @@
-// Mock data for RoomifyU application
-
 export interface User {
   id: string;
   name: string;
@@ -68,23 +66,23 @@ export const currentUser: User = {
 export const rooms: Room[] = [
   {
     id: "r1",
-    name: "Room 301",
-    building: "Engineering Block A",
-    floor: 3,
-    capacity: 30,
+    name: "Microteaching Lab 19F-20",
+    building: "Lavenue Building, 19th Floor",
+    floor: 19,
+    capacity: 20,
     type: "classroom",
     facilities: ["Projector", "Whiteboard", "AC", "WiFi"],
     image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+      "https://res.cloudinary.com/dcmdkdwlw/image/upload/q_auto/f_auto/v1777395269/room19f-04_sbifsb.jpg",
     isAvailable: true,
     isMaintenance: false,
   },
   {
     id: "r2",
-    name: "Lecture Hall 1",
-    building: "Main Building",
-    floor: 2,
-    capacity: 150,
+    name: "Room 19F-04",
+    building: "Lavenue Building, 19th Floor",
+    floor: 19,
+    capacity: 40,
     type: "lecture-hall",
     facilities: [
       "Projector",
@@ -94,7 +92,7 @@ export const rooms: Room[] = [
       "Recording Equipment",
     ],
     image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+      "https://res.cloudinary.com/dcmdkdwlw/image/upload/v1777395616/19f-04_nlhid9.jpg",
     isAvailable: true,
     isMaintenance: false,
   },
